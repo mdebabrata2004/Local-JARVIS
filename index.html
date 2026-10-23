@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>LOCAL JARVIS 1.0 - Interactive Workspace</title>
+    <meta name="description" content="Local-first futuristic interactive workspace with on-device webcam hand tracking and 3D interactions." />
+    <!-- Local styling fallback if external fonts are blocked -->
+    <style>
+      /* Base dark canvas */
+      html, body, #root {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #030712;
+        color: #e2e8f0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      /* Custom futuristic scrollbar */
+      ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(3, 7, 18, 0.8);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(0, 243, 255, 0.25);
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 243, 255, 0.5);
+      }
+    </style>
+  </head>
+  <body class="bg-jarvis-darkest text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
